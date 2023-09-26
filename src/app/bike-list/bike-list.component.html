@@ -1,0 +1,12 @@
+<!-- bike.component.html -->
+
+<h1>Lista de Bicicletas</h1>
+
+<ul>
+  <li *ngFor="let bike of bikes">
+    <strong>Id:</strong> {{ bike.id }}<br>
+    <strong>Modelo:</strong> {{ bike.model }}<br>
+    <strong>Serial:</strong> {{ bike.serial }}<br>
+    <strong>Precio:</strong> {{ bike.price | currency:'USD':'symbol':'1.2-2' }}
+  </li>
+</ul>
